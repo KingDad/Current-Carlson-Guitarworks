@@ -9,10 +9,14 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|PT+Serif' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+        <link rel="stylesheet" href="css/oldmain.css" type="text/css"/>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,23 +24,34 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <hgroup class="banner">
-            <h1>
-                Carlson Guitarworks
-            </h1>
-            <h2>
-                Repair, Building and Restoration of Acoursic and Eletric Stringed Instruments
-            </h2>
-        </hgroup>
-        <nav>
-            <ul>
-                <li><a href="index.html">Carlson Guitarworks</a></li>
-                <li><a href="about.html">Bret Carlson</a></li>
-                <li><a href="prices.html">Prices</a></li>
-            </ul>
-        </nav>
-        <img src="carlsonGuitarWorksImgs/workingImage.jpg" />
-
+        <div class="container-fluid">
+            <div class="splash-screen">
+            <div class="banner-images">
+                <div class="row">
+                    <div class="col-xs-4"><img class="banner-image" src="images/jigged-bass.jpg"></div>
+                    <div class="col-xs-4"><img class="banner-image center-block" src="images/full-bass.jpg" ></div>
+                    <div class="col-xs-4"><img class="banner-image" src="images/full-body-back.jpg" ></div>
+                </div>
+            </div>
+        <h1 class="header text-center">
+            Carlson Guitar Works
+        </h1>
+        </div>
+        <div class="info">
+            <p class="bio">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat consequat nulla. Quisque convallis gravida justo at aliquet. Pellentesque id purus dapibus, vestibulum elit a, mollis mauris. Vestibulum accumsan finibus orci, quis scelerisque sapien rutrum id. Integer rutrum eros vitae libero pretium congue. Vivamus eget lectus mauris. Sed sit amet augue lectus.
+            </p>
+           <ul class="more-images">
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+               <li>Lorem ipsum dolor sit amet.</li>
+           </ul>
+        </div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
