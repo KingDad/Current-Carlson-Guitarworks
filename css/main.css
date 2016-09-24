@@ -1,65 +1,178 @@
 body{
-	background-color: #999999;
-}
-.splash-screen{
-	height: 100vh;
-	background-color:#5C8533;
+		overflow-x: hidden;
 }
 .container{
-	background-color:#5C8533;
-	height: 70vh;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-
-/* still figuring out this box-shadow: 5px 5px 2px #262626; */
-
+	font-size: 0;
+	z-index: 1;
 }
-.banner-images{
-	background-color:#5C8533;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	height: 70vh;
+header, h1, h3{
+	background-color: #5C8533;
 }
-.banner-image{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: 70vh;
-	padding-bottom: 0px;
+header, .center-column, section, footer{
+	font-size: 15px;
 }
-@media screen and (max-width: 900px){
-	#b-img1, #b-img3{
-		display: none;
-	}
+header{
+	border-bottom: 1px solid #4A6B29;
+	box-shadow: 0 2px 5px #333333;
+	font-family: 'Great Vibes', Arial, cursive;
+	height: 11vh;
+	text-align: center;
 }
-.header{
-	background-color: #999999;
-	color: #005C00;
-	height: 30vh;
-	font-size: large;
-    font-family: 'Josefin Slab', serif;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100vw;
+img{
+	height: 5vh;
+	margin-top: 0.3vh;
+	padding-right: 1.5vw;
 }
 h1{
-	text-align: center;
-	font-size: 400%;
-	text-shadow: 3px 3px #808080;
+	font-size: 2.75em;
+	margin: 0;
+	padding: 1.6vh;
 }
-.info{
-	padding-top: 4vh;
-	margin-left: 18vw;
-	margin-right: 13vw;
-	font-size: 200%;
-	height: 70vh;
+.aside{
+	font-size: .66em;
+	padding-left: 1.5vw;
 }
-h2{
-	display: table-cell;
+.center-column{
+	display: inline-block;
+}
+.center-column{
+	height: 82vh;
+	margin-left: 33vw;
+	width: 57.7vw;
+}
+h3{
+	border-bottom: 1px solid #4A6B29;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
+	line-height: 6.3vh;
+	margin: 0;
+	padding: 1vh 0;
 	text-align: center;
+}
+.bio, .contact, .lists{
+	box-shadow: 2px 2px 5px #222222;
+}
+.bio, .contact{
+	margin-top: 8.3vh;
+}
+.bio, .contact{
+	background-color: #368368;
+	height: 28.85vh;
+}
+.bio, .contact, .lists{
+	background-color: #E2D4B8;
+}
+p, ul{
+	border-top: 1px solid #EFE0C2;
+	font-family: 'Droid Serif', serif;
+}
+p{
+	line-height: 1.5;
+	margin: 0;
+	padding: 2vh 2vw;
+}
+section{
+	margin: 7vh 0  7vh 8.3vw;
+}
+.lists{
+	display: inline-block;
+	line-height: 1.5;
+	margin: 0;
+	vertical-align: top;
+	width: 16.7vw;
+}
+h4{
+	margin: 0;
+}
+ul{
+	display: inline-block;
+	list-style-image: url('../images/guitarPick.svg');
+	margin: 0;
+	padding-top: 2vh;
+	padding-right: 1.5vw;
+	padding-left: 2.25vw;
+	padding-bottom: 2vh;
+	vertical-align: top;
+	width:12.45vw;
+}
+.liN{
+	border-top: 1px solid #AEA48E;
+	margin-top: 1vh;
+	padding-top: 1vh;
+}
+.price{
+	display: inline-block;
+}
+.finish-note{
+	display: inline-block;
+	margin: 0 auto 1vh auto;
+	text-align: center;
+}
+footer{
+	background-color: #233314;
+	border-top: 1px solid #25371C;
+	color: #bbbbbb;
+	font-family: 'Josefin Slab', serif;
+	line-height: 1.25;
+	padding: 3vh 0;
+	text-align: center;
+}
+.footer-text{
+	font-size: 2em;
+}
+.background{
+	background-image: url('../images/editedShop1-5.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: fixed;
+	top: 0;
 	width: 100vw;
+	z-index: -1;
 }
-.services{
-	font-size: 80%;
-	list-style-type: square;
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1100px){
+
+	.bio, .contact{
+		margin-left: 8.3vw;
+		width: 50vw;
+	}
+	.lists{
+		margin-bottom: 1vh;
+		overflow: hidden;
+		width: 25vw;
+	}
+	ul{
+		padding-left: 3.5vw;
+		width: 20vw;
+	}
+}
+@media only screen
+and (min-width: 320px)
+and (max-width: 768px){
+	.background{
+		background-image: url("../images/editedShop2.jpg");
+		background-position: 0 -175px;
+	}
+	main{
+		margin-top: 30vh;
+	}
+	.center-column, .bio, .contact, section, .lists{
+		height: auto;
+		margin: 0;
+		width: 100%;
+	}
+	p, ul{
+		font-size: 1.25em;
+	}
+	p{
+		padding: 4vh 4vw;
+	}
+	ul{
+		padding-right: 0;
+		padding-left: 10vw;
+		width: 80vw;
+	}
 }

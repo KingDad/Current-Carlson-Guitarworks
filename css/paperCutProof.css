@@ -1,0 +1,19 @@
+.center-column, .services{
+	display: inline-block;
+}
+.center-column{
+	background-color: blue;
+	margin-left: 33%;
+	width: 33%;
+}
+.services{
+	width: 33%;
+}
+
+@media (max-width: 1024px){
+	.center-column{
+		margin-left: 8.7%;
+		width: 49.3%;
+		background-color: #590;
+	}
+}
