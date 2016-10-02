@@ -121,7 +121,7 @@ footer{
 	font-size: 2em;
 }
 .background{
-	background-image: url('Current-Carlson-Guitarworks/images/editedShop1-5.JPG');
+	background-image: url("../images/editedShop1-5.jpg");
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
