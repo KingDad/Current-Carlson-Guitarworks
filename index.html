@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<header>
-			<h1><img src="images/carlsonGuitarworksLogo.svg" alt="dope logo">Carlson Guitarworks<span class="aside">fine guitar building and repair</span></h1>
+			<h1><img src="images/carlsonGuitarworksLogo.svg" class="logo" alt="Logo">Carlson Guitarworks<span class="aside">fine guitar building and repair</span></h1>
 		</header>
 		<main>
 			<div class="center-column">
@@ -26,6 +26,14 @@
 				</div>
 			</div>
 		</main>
+		<section class="img-gallery">
+			<h3>Gallery</h3>
+			<div class="img full-guitar" data-index="0"></div>
+			<div class="img head-stock" data-index="1"></div>
+			<div class="img full-body-back" data-index="2"></div>
+			<div class="img back-underside" data-index="3"></div>
+			<div class="img jigged-bass" data-index="4"></div>
+		</section>
 		<section>
 			<div class="lists">
 				<h3>Acoustics</h3>
@@ -98,6 +106,14 @@
 			<span class="footer-text"><strong>Pick Up and Drop Off by Appointment<br>Please Call 508-523-9509</strong></span>
 		</footer>
 	</div>
-	<div class="background">
-	</div>
+	<div id="filter"></div>
+	<div class="background"></div>
+	<button id="previous"><</button>
+	<img class="gallery-img" id="full-guitar" src="images/full-guitar.jpg" alt="">
+	<img class="gallery-img" id="head-stock" src="images/head-stock.jpg" alt="">
+	<img class="gallery-img" id="full-body-back" src="images/full-body-back.jpg" alt="">
+	<img class="gallery-img" id="back-underside" src="images/back-underside.jpg" alt="">
+	<img class="gallery-img" id="jigged-bass" src="images/jigged-bass.jpg" alt="">
+	<button id="next">></button>
+	<script src="js/application.js"></script>
 </body>
