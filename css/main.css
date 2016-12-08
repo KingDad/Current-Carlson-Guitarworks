@@ -199,16 +199,15 @@ button{
 	height: 100px;
 	outline: none;
 	position: fixed;
+	top: 42vh;
 	width: 100px;
 	z-index: 3;
 }
 #previous{
 	left: 10vw;
-	top: 42vh;
 }
 #next{
 	right: 10vw;
-	top: 42vh;
 }
 button:active{
 	border: 3px solid transparent;
@@ -247,7 +246,7 @@ and (min-width: 320px)
 and (max-width: 768px){
 	.background{
 		background-image: url("../images/editedShop2.jpg");
-		background-position: 0 -175px;
+		background-position: center;
 	}
 	main{
 		margin-top: 50vh;
@@ -257,8 +256,16 @@ and (max-width: 768px){
 		margin: 0;
 		width: 100%;
 	}
+	.aside{
+		display: inline-block;
+		width: 100vw;
+	}
+	h3{
+		height: 10vh;
+		line-height: 10vh;
+	}
 	.img-gallery{
-		height: 33vh;
+		height: auto;
 	}
 	p, ul{
 		font-size: 1.25em;
@@ -267,8 +274,9 @@ and (max-width: 768px){
 		padding: 4vh 4vw;
 	}
 	.img{
-		height: 16.5vw;
-		width: 16.5vw;
+		height: 66vw;
+		margin: 4vh auto 4vh 16.7vw;
+		width: 66vw;
 	}
 	.head-stock, .jigged-bass{
 		background-position: center;
@@ -287,14 +295,15 @@ and (max-width: 768px){
 	}
 	.gallery-img{
 		height: auto;
-		top: 3vh;
+		top: 10vh;
 		width: 55%;
 	}
 	button{
 		height: 75px;
+		top: 80vh;
 		width: 75px;
 	}
-		#previous{
+	#previous{
 		left: 5vw;
 	}
 	#next{
