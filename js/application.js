@@ -1,11 +1,11 @@
-function lightBox(){
+function gallery(){
 //Variable declarations
-	window.dark = document.getElementById('filter');
-	window.imgs = document.getElementsByClassName('img');
-	window.galleryImgs = document.getElementsByClassName('gallery-img');
-	window.previous = document.getElementById('previous');
-	window.next = document.getElementById('next');
-	window.index = null;
+	var dark = document.getElementById('filter');
+	var imgs = document.getElementsByClassName('img');
+	var galleryImgs = document.getElementsByClassName('gallery-img');
+	var previous = document.getElementById('previous');
+	var next = document.getElementById('next');
+	var index = null;
 //The lightbox begins
 //Not necessarily optimized but wanted to get a working version up first
 	for (i = 0, len = imgs.length; i < len; i++){
@@ -42,4 +42,4 @@ function lightBox(){
 	}
 	return "Radical";
 }
-lightBox();
+gallery();

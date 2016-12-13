@@ -295,7 +295,7 @@ and (max-width: 768px){
 	}
 	.gallery-img{
 		height: auto;
-		top: 10vh;
+		top: 8vh;
 		width: 55%;
 	}
 	button{
