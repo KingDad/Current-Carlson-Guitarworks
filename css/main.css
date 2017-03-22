@@ -52,8 +52,8 @@ h3{
 	box-shadow: 2px 2px 5px #222222;
 }
 .bio, .contact{
-	margin-top: 8.3vh;
 	height: 28.85vh;
+	margin-top: 8.3vh;
 }
 .bio, .contact, .img-gallery, .lists{
 	background-color: #E2D4B8;
@@ -71,24 +71,31 @@ section{
 	margin: 7vh 0  7vh 8.3vw;
 }
 .img-gallery{
-	height: 42.5vh;
 	width: 82.5vw;
 }
+.gallery-text{
+	text-align: center;
+}
 .img{
-	background-color: gray;
-	border: 2px solid transparent;
+	background-color: #000000;
 	display: inline-block;
 	height: 14vw;
 	margin-top: 2.25vh;
-	margin-bottom: 2vh;
+	margin-bottom: 20px;
 	margin-left: 1.75vw;
 	overflow: hidden;
 	vertical-align: top;
 	width: 14vw;
 	z-index: 1;
 }
-.img:hover{
-	border: 2px solid;
+.img-filter{
+	background-color: #000000;
+	height: 100%;
+	opacity: 0.35;
+	width: 100%;
+}
+.img-filter:hover{
+	opacity: 0;
 }
 .full-guitar{
 	background-image: url('../images/full-guitar.jpg');
@@ -164,17 +171,17 @@ footer{
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: -1;
+	z-index: -2;
 }
 #filter{
 	background-color: #000000;
-	display: none;
+	display: inline-block;
 	height: 100vh;
-	opacity: 0.85;
+	opacity: 0.4;
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: 2;
+	z-index: -1;
 }
 .gallery-img{
 	display: none;
@@ -218,6 +225,7 @@ and (min-width: 768px)
 and (max-width: 1100px){
 
 	.bio, .contact{
+		height: auto;
 		margin-left: 8.3vw;
 		width: 50vw;
 	}
@@ -274,9 +282,9 @@ and (max-width: 768px){
 		padding: 4vh 4vw;
 	}
 	.img{
-		height: 66vw;
-		margin: 4vh auto 4vh 16.7vw;
-		width: 66vw;
+		height: 33vw;
+		margin: 4vh auto 4vh 8.3vw;
+		width: 33vw;
 	}
 	.head-stock, .jigged-bass{
 		background-position: center;

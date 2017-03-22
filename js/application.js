@@ -11,14 +11,16 @@ function gallery(){
 	for (i = 0, len = imgs.length; i < len; i++){
 		imgs[i].onclick = function(){
 			index = this.getAttribute('data-index');
-			dark.style.display = 'block';
+			dark.style.zIndex = '2';
+			dark.style.opacity = '0.85';
 			galleryImgs[index].style.display = 'block';
 			previous.style.display = 'block';
 			next.style.display = 'block';
 		}
 	}
 	dark.onclick = function(){
-		dark.style.display = 'none';
+		dark.style.zIndex = '-1';
+		dark.style.opacity = '0.4';
 		galleryImgs[index].style.display = 'none';
 		previous.style.display = 'none';
 		next.style.display = 'none';
