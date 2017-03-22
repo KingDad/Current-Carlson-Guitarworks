@@ -164,6 +164,7 @@ footer{
 	font-size: 2em;
 }
 .background{
+	background-color: #ead19f;
 	background-image: url("../images/editedShop1-5.JPG");
 	background-position: center;
 	background-size: cover;
