@@ -43,7 +43,7 @@ h3{
 	border-bottom: 1px solid #4A6B29;
 	font-family: 'Josefin Slab', serif;
 	font-size: 2em;
-	line-height: 1.2em;
+	line-height: 1.6em;
 	margin: 0;
 	padding: 1vh 0;
 	text-align: center;
@@ -75,20 +75,21 @@ section{
 }
 .gallery-text{
 	font-style: italic;
-	padding: 2px;
+	padding: 12px 0 2px 0;
 	text-align: center;
 }
 .img{
 	background-color: #000000;
 	display: inline-block;
 	height: 14vw;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left: 1.75vw;
+	margin: 2% 0 2% 1%;
 	overflow: hidden;
 	vertical-align: top;
 	width: 14vw;
 	z-index: 1;
+}
+.img:first-of-type{
+	margin-left: 5%;
 }
 .img-filter{
 	background-color: #000000;
