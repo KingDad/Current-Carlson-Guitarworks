@@ -65,23 +65,25 @@ p, ul{
 p{
 	line-height: 1.5;
 	margin: 0;
-	padding: 2vh 2vw;
+	padding: 3% 4%;
 }
 section{
-	margin: 7vh 0  7vh 8.3vw;
+	margin: 7% 0  7% 8.3vw;
 }
 .img-gallery{
 	width: 82.5vw;
 }
 .gallery-text{
+	font-style: italic;
+	padding: 2px;
 	text-align: center;
 }
 .img{
 	background-color: #000000;
 	display: inline-block;
 	height: 14vw;
-	margin-top: 2.25vh;
-	margin-bottom: 20px;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	margin-left: 1.75vw;
 	overflow: hidden;
 	vertical-align: top;
@@ -186,12 +188,13 @@ footer{
 }
 .gallery-img{
 	display: none;
-	height: 75vh;
+	height: 66vh;
 	margin: 0 auto;
 	position: fixed;
-	top: 12.5vh;
+	top: 15vh;
 	right: 0%;
 	left: 0%;
+	max-width: 66%;
 	z-index: 3;
 }
 button{
@@ -212,10 +215,10 @@ button{
 	z-index: 3;
 }
 #previous{
-	left: 10vw;
+	left: 15vw;
 }
 #next{
-	right: 10vw;
+	right: 15vw;
 }
 button:active{
 	border: 3px solid transparent;
